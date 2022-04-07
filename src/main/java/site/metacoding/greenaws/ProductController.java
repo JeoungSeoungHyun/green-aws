@@ -23,7 +23,7 @@ public class ProductController {
         return new ResponseEntity<>("이미지 저장경로 : " + path, HttpStatus.OK);
     }
 
-    @GetMapping("/")
+    @GetMapping("list")
     public ResponseEntity<?> home() {
         return new ResponseEntity<>(productRepository.findAll(), HttpStatus.OK);
     }
